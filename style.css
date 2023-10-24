@@ -46,17 +46,43 @@ body{
     transition: all 0.3s;   
 }
 
+h3{
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    text-transform: uppercase;  
+}
+
+.bienvenida h3{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+/*
+.bienvenida h3:hover{
+    cursor: pointer;
+    background-color: #ff00ea;
+}
+*/
 .main-product-container .bienvenida h2:hover{
     color: #9e1693;
 }
-/*
-.main-container{
-    padding-bottom: 30px;
+
+.bienvenida h3:hover{
+    cursor: pointer;
+    color: #9e1693;
 }
-*/
 .main-product-container{
     padding-bottom: 70px;
 }
+
+.div-product-container{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
 .contact ul li a:hover{
     color:#9e1693;
 }
@@ -92,6 +118,14 @@ body{
     border-radius: 3px;
 }
 
+.portafolio-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+    border-radius: 3px;
+    padding-bottom: 35px;
+}
+
 .product-1 {
     border-radius: 20px;
     background-color: black;
@@ -119,13 +153,7 @@ body{
     transform: scale(1.01);
 }
 
-h3{
-    font-size: 20px;
-    color: whitesmoke;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    
-}
+
 
 .tipo{
     display: flex;
@@ -222,5 +250,7 @@ h3{
         flex-direction:column;
         text-align: center;
     }
-
+    h3{
+        width: auto;
+    }
 }
